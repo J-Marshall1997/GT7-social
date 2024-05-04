@@ -11,5 +11,7 @@ func TracksGetHandler(c echo.Context) error {
 }
 
 func TracksIdGetHandler(c echo.Context) error {
+	
 	return c.String(http.StatusOK, "Getting 1 track!")
+
 }

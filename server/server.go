@@ -16,7 +16,7 @@ func Server() {
 
 	carsGroup := e.Group("/cars")
 	carsGroup.GET("", base.CarsGetHandler)
-	carsGroup.GET("/:id", base.CarsIdGetHandler)
+	carsGroup.GET("/filter", base.GetCarsWithFilters)
 
 	tracksGroup := e.Group("tracks")
 	tracksGroup.GET("", base.TracksGetHandler)
