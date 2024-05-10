@@ -16,15 +16,15 @@ func Server() {
 
 	carsGroup := e.Group("/cars")
 	carsGroup.GET("", base.CarsGetHandler)
-	carsGroup.GET("/filter", base.GetCarsWithFilters)
+	carsGroup.GET("/filter", base.GetCarsWithFiltersHandler)
 
 	tracksGroup := e.Group("tracks")
 	tracksGroup.GET("", base.TracksGetHandler)
-	tracksGroup.GET("/:name", base.TracksIdGetHandler)
+	tracksGroup.GET("/filter", base.GetTracksWithFiltersHandler)
 
 	racesGroup := e.Group("races")
 	racesGroup.GET("", base.RacesGetHandler)
-	racesGroup.GET("/:name", base.RacesIdGetHandler)
+	racesGroup.GET("/filter", base.GetRaceWithFiltersHandler)
 	racesGroup.PUT("", base.RacesPutHandler)
 
 	usersGroup := e.Group("users")
