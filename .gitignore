@@ -1,2 +1,4 @@
 gt7social
 build/
+cache/
+.vscode/
