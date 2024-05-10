@@ -18,3 +18,13 @@ const (
 	DEFAULT_MIN_PRICE = 0
 	DEFAULT_MAX_PRICE = 40000000
 )
+
+const (
+	DEFAULT_MIN_LENGTH = 0
+	DEFAULT_MAX_LENGTH = 30000
+)
+
+const (
+	DEFAULT_RAIN = "Both"
+	DEFAULT_TYPE = "Asphalt"
+)

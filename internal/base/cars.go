@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"net/url"
 	"os"
 	"strconv"
 
@@ -15,7 +16,7 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-type RequestFilters struct {
+type CarRequestFilters struct {
 	Groups []string
 	MinPP  float32
 	MaxPP  float32
@@ -77,39 +78,49 @@ func CarsGetHandler(c echo.Context) error {
 	return c.String(http.StatusOK, "Get all the cars!!")
 }
 
-func GetCarsWithFilters(c echo.Context) error {	
-	allParams := c.QueryParams()
+func GetCarsWithFiltersHandler(c echo.Context) error {
+	cars, _ := GetCarsWithFilters(c.QueryParams())
+	
+	output, err := json.Marshal(cars)
+	if err != nil {
+		fmt.Println("Failed to marshal car output")
+		fmt.Println(err.Error())
+		return c.String(http.StatusInternalServerError, "Failed to get filtered cars")
+	}
+	return c.String(http.StatusOK, string(output))
+}
 
+func GetCarsWithFilters(params url.Values) (OutputCars, error) {	
 	var minPP, maxPP float64
 	var minPrice, maxPrice int
 	var groups []string
 	// Setup filter variables
-	if allParams.Get("minPP") == "" {
+	if params.Get("minPP") == "" {
 		minPP = config.DEFAULT_MIN_PP
 	} else {
-		minPP, _ = strconv.ParseFloat(allParams.Get("minPP"), 32)
+		minPP, _ = strconv.ParseFloat(params.Get("minPP"), 32)
 	}
-	if allParams.Get("maxPP") == "" {
+	if params.Get("maxPP") == "" {
 		maxPP = config.DEFAULT_MAX_PP
 	} else {
-		maxPP, _ = strconv.ParseFloat(allParams.Get("maxPP"), 32)
+		maxPP, _ = strconv.ParseFloat(params.Get("maxPP"), 32)
 	}
-	if allParams["groups"] == nil {
+	if params["groups"] == nil {
 		groups = config.DEFAULT_GROUPS
 	} else {
-		groups = allParams["groups"]
+		groups = params["groups"]
 	}
-	if allParams.Get("minPrice") == "" {
+	if params.Get("minPrice") == "" {
 		minPrice = config.DEFAULT_MIN_PRICE
 	} else {
-		minPrice, _ = strconv.Atoi(allParams.Get("minPrice"))
+		minPrice, _ = strconv.Atoi(params.Get("minPrice"))
 	}	
-	if allParams.Get("maxPrice") == "" {
+	if params.Get("maxPrice") == "" {
 		maxPrice = config.DEFAULT_MAX_PRICE
 	} else {
-		maxPrice, _ = strconv.Atoi(allParams.Get("maxPrice"))
+		maxPrice, _ = strconv.Atoi(params.Get("maxPrice"))
 	}
-	filters := RequestFilters{
+	filters := CarRequestFilters{
 		Groups: groups,
 		MinPP: float32(minPP),
 		MaxPP: float32(maxPP),
@@ -124,26 +135,20 @@ func GetCarsWithFilters(c echo.Context) error {
 	if err != nil {
 		fmt.Println("Error reading file into byte string")
 		fmt.Println(err.Error())
-		return c.String(http.StatusInternalServerError, "Failed to get filtered car list")
+		return OutputCars{}, err
 	}
 	err = json.Unmarshal(body, &Data)
 	if err != nil {
 		fmt.Println("Failed to unmarshal car data")
 		fmt.Printf("%v\n", string(body))
-		return c.String(http.StatusInternalServerError, "Failed to get filtered car list")
+		return OutputCars{}, err
 	}
 
 	filteredCars := filterPP(Data.Cars, filters.MinPP, filters.MaxPP)
 	filteredCars = filterGroup(filteredCars, filters.Groups)
 	filteredCars = filterPrice(filteredCars, filters.MinPrice, filters.MaxPrice)
 	outputCars := prepareOutputCars(filteredCars)
-	output, err := json.Marshal(outputCars)
-	if err != nil {
-		fmt.Println("Failed to marshal car output")
-		fmt.Println(err.Error())
-		return c.String(http.StatusInternalServerError, "Failed to get filtered car list")
-	}
-	return c.String(http.StatusOK, string(output))
+	return outputCars, nil
 }
 
 func ReconsileCars() error {
@@ -241,6 +246,5 @@ func prepareOutputCars(cars Cars) (out OutputCars) {
 		}
 		out.Cars = append(out.Cars, outputCar)
 	}
-	fmt.Printf("Unprepped Cars: %+v", cars)
 	return out
 }

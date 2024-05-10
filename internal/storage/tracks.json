@@ -1,0 +1,1144 @@
+{
+    "tracks": [
+        {
+            "course": "24 Heures du Mans Racing Circuit",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 13629,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "24 Heures du Mans Racing Circuit",
+            "layout": "No Chicane",
+            "type": "Asphalt",
+            "length": 13567,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Alsace",
+            "layout": "Village",
+            "type": "Asphalt",
+            "length": 5423,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Alsace",
+            "layout": "Village Reverse",
+            "type": "Asphalt",
+            "length": 5423,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Alsace",
+            "layout": "Test Course",
+            "type": "Asphalt",
+            "length": 2118,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Alsace",
+            "layout": "Test Course",
+            "type": "Asphalt",
+            "length": 2118,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 5809,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "Full Course Reverse",
+            "type": "Asphalt",
+            "length": 5809,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "Centre",
+            "type": "Asphalt",
+            "length": 1706,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "Centre Reverse",
+            "type": "Asphalt",
+            "length": 1706,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "East End",
+            "type": "Asphalt",
+            "length": 2010,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "East End Reverse",
+            "type": "Asphalt",
+            "length": 2010,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "West End",
+            "type": "Asphalt",
+            "length": 2444,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "West End Reverse",
+            "type": "Asphalt",
+            "length": 2444,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "East",
+            "type": "Asphalt",
+            "length": 3643,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "East Reverse",
+            "type": "Asphalt",
+            "length": 3643,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "West",
+            "type": "Asphalt",
+            "length": 4168,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodrome Lage Maggiore",
+            "layout": "West Reverse",
+            "type": "Asphalt",
+            "length": 4168,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodromo de Interlagos",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 4309,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodromo Nazionale Monza",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 5793,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autodromo Nazionale Monza",
+            "layout": "No Chicane",
+            "type": "Asphalt",
+            "length": 5755,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autopolis International Racing Course",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 4674,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Autopolis International Racing Course",
+            "layout": "Shortcut Course",
+            "type": "Asphalt",
+            "length": 3022,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Blue Moon Bay Speedway",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 3200,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Blue Moon Bay Speedway",
+            "layout": "Full Course Reverse",
+            "type": "Asphalt",
+            "length": 3200,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Blue Moon Bay Speedway",
+            "layout": "Infield A",
+            "type": "Asphalt",
+            "length": 3350,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Blue Moon Bay Speedway",
+            "layout": "Infield A Reverse",
+            "type": "Asphalt",
+            "length": 3350,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Blue Moon Bay Speedway",
+            "layout": "Infield B",
+            "type": "Asphalt",
+            "length": 2860,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Blue Moon Bay Speedway",
+            "layout": "Infield B Reverse",
+            "type": "Asphalt",
+            "length": 2860,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Brands Hatch",
+            "layout": "Grand Prix Circuit",
+            "type": "Asphalt",
+            "length": 3946,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Brands Hatch",
+            "layout": "Indy Circuit",
+            "type": "Asphalt",
+            "length": 1944,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Broad Bean Raceway",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 1665,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Broad Bean Raceway",
+            "layout": "Full Course Reverse",
+            "type": "Asphalt",
+            "length": 1665,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Barcelona-Catalunya",
+            "layout": "Grand Prix Layout",
+            "type": "Asphalt",
+            "length": 4655,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Barcelona-Catalunya",
+            "layout": "Grand Prix Layout No Chicane",
+            "type": "Asphalt",
+            "length": 4730,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Barcelona-Catalunya",
+            "layout": "National Layout",
+            "type": "Asphalt",
+            "length": 2977,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Barcelona-Catalunya",
+            "layout": "Rallycross Layout",
+            "type": "Dirt",
+            "length": 1133,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Sainte-Croix",
+            "layout": "Layout A",
+            "type": "Asphalt",
+            "length": 9477,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Sainte-Croix",
+            "layout": "Layout A",
+            "type": "Asphalt",
+            "length": 9477,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Sainte-Croix",
+            "layout": "Layout B",
+            "type": "Asphalt",
+            "length": 7062,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Sainte-Croix",
+            "layout": "Layout B Reverse",
+            "type": "Asphalt",
+            "length": 7062,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Sainte-Croix",
+            "layout": "Layout C",
+            "type": "Asphalt",
+            "length": 10825,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Sainte-Croix",
+            "layout": "Layout C Reverse",
+            "type": "Asphalt",
+            "length": 10825,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Spa-Francorchamps",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 7044,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Circuit de Spa-Francorchamps",
+            "layout": "25h Layout",
+            "type": "Asphalt",
+            "length": 7044,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Colorado Springs",
+            "layout": "Lake",
+            "type": "Dirt",
+            "length": 2990,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Daytona International Speedway",
+            "layout": "Tri-Oval",
+            "type": "Asphalt",
+            "length": 4023,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Daytona International Speedway",
+            "layout": "Road Course",
+            "type": "Asphalt",
+            "length": 5729,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Deep Forest Raceway",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 4253,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Deep Forest Raceway",
+            "layout": "Full Course Reverse",
+            "type": "Asphalt",
+            "length": 4253,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Dragon Trail",
+            "layout": "Seaside",
+            "type": "Asphalt",
+            "length": 5209,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Dragon Trail",
+            "layout": "Seaside Reverse",
+            "type": "Asphalt",
+            "length": 5209,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Dragon Trail",
+            "layout": "Gardens",
+            "type": "Asphalt",
+            "length": 4352,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Dragon Trail",
+            "layout": "Gardens Reverse",
+            "type": "Asphalt",
+            "length": 4352,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Fishermans Ranch",
+            "layout": "Full Course",
+            "type": "Dirt",
+            "length": 6893,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Fishermans Ranch",
+            "layout": "Full Course Reverse",
+            "type": "Dirt",
+            "length": 6893,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Fuji International Speedway",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 4563,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Fuji International Speedway",
+            "layout": "Short Course",
+            "type": "Asphalt",
+            "length": 4526,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Goodwood Motor Circuit",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 3809,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Grand Valley",
+            "layout": "Highway 1",
+            "type": "Asphalt",
+            "length": 5099,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Grand Valley",
+            "layout": "Highway 1 Reverse",
+            "type": "Asphalt",
+            "length": 5099,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Grand Valley",
+            "layout": "South",
+            "type": "Asphalt",
+            "length": 3076,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Grand Valley",
+            "layout": "South Reverse",
+            "type": "Asphalt",
+            "length": 3076,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "High Speed Ring",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 4345,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "High Speed Ring",
+            "layout": "Full Course Reverse",
+            "type": "Asphalt",
+            "length": 4345,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Kyoto Driving Park",
+            "layout": "Yamagiwa",
+            "type": "Asphalt",
+            "length": 4912,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Kyoto Driving Park",
+            "layout": "Yamagiwa Reverse",
+            "type": "Asphalt",
+            "length": 4912,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Kyoto Driving Park",
+            "layout": "Miyabi",
+            "type": "Asphalt",
+            "length": 1953,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Kyoto Driving Park",
+            "layout": "Yamagiwa + Miyabi",
+            "type": "Asphalt",
+            "length": 6846,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Kyoto Driving Park",
+            "layout": "Yamagiwa + Miyabi Reverse",
+            "type": "Asphalt",
+            "length": 6846,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Lake Louise",
+            "layout": "Tri-Oval",
+            "type": "Snow",
+            "length": 3068,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Lake Louise",
+            "layout": "Tri-Oval Reverse",
+            "type": "Snow",
+            "length": 3068,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Lake Louise",
+            "layout": "Short Track",
+            "type": "Snow",
+            "length": 2577,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Lake Louise",
+            "layout": "Short Track Reverse",
+            "type": "Snow",
+            "length": 2577,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Lake Louise",
+            "layout": "Long Track",
+            "type": "Snow",
+            "length": 3694,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Lake Louise",
+            "layout": "Long Track Reverse",
+            "type": "Snow",
+            "length": 3694,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Michelin Raceway Road Atlanta",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 4088,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Mount Panorama",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 6213,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Northern Isle Speedway",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 900,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Nurburgring",
+            "layout": "Nordschleife",
+            "type": "Asphalt",
+            "length": 20832,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Nurburgring",
+            "layout": "Nordschleife Tourist",
+            "type": "Asphalt",
+            "length": 20832,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Nurburgring",
+            "layout": "24h",
+            "type": "Asphalt",
+            "length": 25378,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Nurburgring",
+            "layout": "Grand Prix",
+            "type": "Asphalt",
+            "length": 5148,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Nurburgring",
+            "layout": "Endurance",
+            "type": "Asphalt",
+            "length": 23864,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Nurburgring",
+            "layout": "Sprint",
+            "type": "Asphalt",
+            "length": 3629,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Red Bull Ring",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 4318,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Red Bull Ring",
+            "layout": "Short Track",
+            "type": "Asphalt",
+            "length": 2336,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Sardegna - Road Track",
+            "layout": "Layout A",
+            "type": "Asphalt",
+            "length": 5113,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Sardegna - Road Track",
+            "layout": "Layout A Reverse",
+            "type": "Asphalt",
+            "length": 5113,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Sardegna - Road Track",
+            "layout": "Layout B",
+            "type": "Asphalt",
+            "length": 3893,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Sardegna - Road Track",
+            "layout": "Layout B Reverse",
+            "type": "Asphalt",
+            "length": 3893,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Sardegna - Road Track",
+            "layout": "Layout C",
+            "type": "Asphalt",
+            "length": 2661,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Sardegna - Road Track",
+            "layout": "Layout C Reverse",
+            "type": "Asphalt",
+            "length": 2661,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Sardegna - Windmills",
+            "layout": "Full Course",
+            "type": "Dirt",
+            "length": 3310,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Sardegna - Windmills",
+            "layout": "Full Course Reverse",
+            "type": "Dirt",
+            "length": 3310,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Suzuka Circuit",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 5807,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Suzuka Circuit",
+            "layout": "East Course",
+            "type": "Asphalt",
+            "length": 2243,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Tokyo Expressway",
+            "layout": "Central Clockwise",
+            "type": "Asphalt",
+            "length": 4405,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Tokyo Expressway",
+            "layout": "East Clockwise",
+            "type": "Asphalt",
+            "length": 7301,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Tokyo Expressway",
+            "layout": "South Clockwise",
+            "type": "Asphalt",
+            "length": 5201,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Tokyo Expressway",
+            "layout": "Central Counterclockwise",
+            "type": "Asphalt",
+            "length": 4369,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Tokyo Expressway",
+            "layout": "East Counterclockwise",
+            "type": "Asphalt",
+            "length": 7192,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Tokyo Expressway",
+            "layout": "South Counterclockwise",
+            "type": "Asphalt",
+            "length": 6560,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Trial Mountain Circuit",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 5434,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Trial Mountain Circuit",
+            "layout": "Full Course Reverse",
+            "type": "Asphalt",
+            "length": 5434,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Tsukuba Circuit",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 2045,
+            "rain": "Yes",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Watkins Glen International",
+            "layout": "Long Course",
+            "type": "Asphalt",
+            "length": 5423,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Watkins Glen International",
+            "layout": "Short Course",
+            "type": "Asphalt",
+            "length": 3942,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "WeatherTech Raceway Laguna Seca",
+            "layout": "Full Course",
+            "type": "Asphalt",
+            "length": 3602,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Willow Springs International Raceway",
+            "layout": "Big Willow",
+            "type": "Asphalt",
+            "length": 3951,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Willow Springs International Raceway",
+            "layout": "Streets of Willow Springs",
+            "type": "Asphalt",
+            "length": 2675,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Willow Springs International Raceway",
+            "layout": "Streets of Willow Springs Reverse",
+            "type": "Asphalt",
+            "length": 2675,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Willow Springs International Raceway",
+            "layout": "Horse Thief Mile",
+            "type": "Asphalt",
+            "length": 1624,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        },
+        {
+            "course": "Willow Springs International Raceway",
+            "layout": "Horse Thief Mile Reverse",
+            "type": "Asphalt",
+            "length": 1624,
+            "rain": "No",
+            "rating": 0,
+            "races": 0,
+            "last_raced": "1970-01-01"
+        }
+    ]
+}
