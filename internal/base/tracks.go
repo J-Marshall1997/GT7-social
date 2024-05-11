@@ -41,6 +41,8 @@ type OutputTracks struct {
 type OutputTrack struct {
 	Course string `json:"course"`
 	Layout string `json:"layout"`
+	Length int
+	Laps int `json:"laps"`
 }
 
 func TracksGetHandler(c echo.Context) error {
@@ -108,14 +110,7 @@ func GetTracksWithFilters(params url.Values) (OutputTracks, error) {
 	filteredTracks = filterLength(filteredTracks, filters.MinLength, filters.MaxLength)
 	filteredTracks = filterRain(filteredTracks, filters.Rain)
 	outputTracks := prepareOutputTracks(filteredTracks)
-	// output, err := json.Marshal(outputTracks)
-	// if err != nil {
-	// 	fmt.Println("Failed to marshal track output")
-	// 	fmt.Println(err.Error())
-	// 	return OutputTracks{}, err
-	// }
 	return outputTracks, nil
-
 }
 
 func filterType(tracks Tracks, trackType string) (out Tracks) {
@@ -158,6 +153,8 @@ func prepareOutputTracks(tracks Tracks) (out OutputTracks) {
 		outputTrack := OutputTrack{
 			Course: track.Course,
 			Layout: track.Layout,
+			Length: track.Length,
+			Laps: 0,
 		}
 		out.Tracks = append(out.Tracks, outputTrack)
 	}
