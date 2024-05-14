@@ -1,11 +1,13 @@
 package base
 
 import (
-	"math/rand/v2"
 	"encoding/json"
+	"math/rand/v2"
 	"net/http"
+	"strconv"
 
 	"github.com/labstack/echo/v4"
+	"github.com/gt7social/internal/utils"
 )
 
 type Race struct {
@@ -23,6 +25,16 @@ func GetRaceWithFiltersHandler(c echo.Context) error {
 	tracks, _ := GetTracksWithFilters(allParams)
 	cars, _ := GetCarsWithFilters(allParams)
 
+	numCars, _ := strconv.Atoi(allParams.Get("numCars"))
+	numCars = utils.MinInt(numCars, 10, len(cars.Cars))
+	var indexes map[int]bool
+
+	for i := 0; i < numCars; i++ {
+		randCarIndex := rand.IntN(numCars)
+		if !indexes[randCarIndex] {
+			indexes[randCarIndex] = true
+		}
+	}
 	randTrackIndex := rand.IntN(len(tracks.Tracks))
 	randCarIndex := rand.IntN(len(cars.Cars))
 
