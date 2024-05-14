@@ -2,7 +2,6 @@ package base
 
 import (
 	"encoding/json"
-	"fmt"
 	"math/rand/v2"
 	"net/http"
 	"strconv"
