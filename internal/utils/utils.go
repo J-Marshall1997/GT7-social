@@ -12,3 +12,13 @@ func MinInt(x ...int) (int) {
 	}
 	return min
 }
+
+func MaxInt(x ...int) (int) {
+	max := math.MinInt
+	for _, num := range(x){
+		if num > max {
+			max = num
+		}
+	}
+	return max
+}

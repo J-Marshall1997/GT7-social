@@ -45,10 +45,6 @@ type OutputTrack struct {
 	Laps int `json:"laps"`
 }
 
-func TracksGetHandler(c echo.Context) error {
-	return c.String(http.StatusOK, "Getting all tracks!!")
-}
-
 func GetTracksWithFiltersHandler(c echo.Context) error {
 	tracks, _ := GetTracksWithFilters(c.QueryParams())
 
