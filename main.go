@@ -1,11 +1,15 @@
 package main
 
 import (
-	"github.com/gt7social/server"
+	"fmt"
+
 	"github.com/gt7social/internal/base"
+	"github.com/gt7social/server"
 )
 
 func main() {
-	_ = base.ReconsileCars()
+	if err := base.ReconsileCars(); err != nil {
+		fmt.Printf("error while reconsiling cars: %v", err.Error())
+	}
 	server.Server()
 }

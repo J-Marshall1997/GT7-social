@@ -74,10 +74,6 @@ func (pp *PP) UnmarshalJSON(d []byte) error {
 	return err
 }
 
-func CarsGetHandler(c echo.Context) error {
-	return c.String(http.StatusOK, "Get all the cars!!")
-}
-
 func GetCarsWithFiltersHandler(c echo.Context) error {
 	cars, _ := GetCarsWithFilters(c.QueryParams())
 	
