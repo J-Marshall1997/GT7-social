@@ -71,7 +71,7 @@ func initRace(cars []OutputCar, tracks []OutputTrack, numCars, time int, maxPP f
 	// Need to get car first as the car's PP is needed to filter out tracks that can't be finished in time
 	indexes := make(map[int]bool, numCars)
 	for i := 0; i < numCars; i++ {
-		index := getUniqueIndex(indexes, numCars)
+		index := getUniqueIndex(indexes, len(cars))
 		indexes[index] = true
 	}
 	for index := range indexes {
