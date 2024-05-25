@@ -11,6 +11,7 @@ import (
 	"net/url"
 	"os"
 	"strconv"
+	"log"
 
 	"github.com/gt7social/config"
 	"github.com/labstack/echo/v4"
@@ -75,6 +76,7 @@ func (pp *PP) UnmarshalJSON(d []byte) error {
 }
 
 func GetCarsWithFiltersHandler(c echo.Context) error {
+	log.Println("Received call to /cars")
 	cars, _ := GetCarsWithFilters(c.QueryParams())
 	
 	output, err := json.Marshal(cars)
@@ -83,6 +85,7 @@ func GetCarsWithFiltersHandler(c echo.Context) error {
 		fmt.Println(err.Error())
 		return c.String(http.StatusInternalServerError, "Failed to get filtered cars")
 	}
+	log.Println("Returning message from /cars")
 	return c.String(http.StatusOK, string(output))
 }
 

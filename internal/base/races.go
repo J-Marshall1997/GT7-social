@@ -5,6 +5,7 @@ import (
 	"math/rand/v2"
 	"net/http"
 	"strconv"
+	"log"
 
 	"github.com/gt7social/internal/utils"
 	"github.com/labstack/echo/v4"
@@ -25,6 +26,7 @@ type RaceConstants struct {
 }
 
 func GetRaceWithFiltersHandler(c echo.Context) error {
+	log.Println("Received call to /races")
 	allParams := c.QueryParams()
 	raceTime, _ := strconv.Atoi(allParams.Get("raceTime"))
 	maxPP, _ := strconv.ParseFloat(c.QueryParams().Get("maxPP"), 32) // Still have to float32() this anyway...
@@ -46,6 +48,7 @@ func GetRaceWithFiltersHandler(c echo.Context) error {
 	
 	output, _ := json.Marshal(race)
 
+	log.Println("Returning a race")
 	return c.String(http.StatusOK, string(output))
 }
 

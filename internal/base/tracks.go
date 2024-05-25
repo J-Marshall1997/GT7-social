@@ -7,6 +7,7 @@ import (
 	"net/url"
 	"os"
 	"strconv"
+	"log"
 
 	"github.com/gt7social/config"
 	"github.com/labstack/echo/v4"
@@ -46,6 +47,7 @@ type OutputTrack struct {
 }
 
 func GetTracksWithFiltersHandler(c echo.Context) error {
+	log.Println("Received call to /tracks")
 	tracks, _ := GetTracksWithFilters(c.QueryParams())
 
 	output, err := json.Marshal(tracks)
@@ -54,6 +56,7 @@ func GetTracksWithFiltersHandler(c echo.Context) error {
 		fmt.Println(err.Error())
 		return c.String(http.StatusInternalServerError, "Failed to get filtered tracks")
 	}
+	log.Println("Returning message from /tracks")
 	return c.String(http.StatusOK, string(output))
 }
 
