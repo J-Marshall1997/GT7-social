@@ -1,26 +1,25 @@
 package base
 
 import (
-	// "encoding/json"
-
 	"bytes"
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
 	"net/http"
 	"net/url"
 	"os"
 	"strconv"
-	"log"
+	"strings"
 
 	"github.com/gt7social/config"
 	"github.com/labstack/echo/v4"
 )
 
 type CarRequestFilters struct {
-	Groups []string
-	MinPP  float32
-	MaxPP  float32
+	Groups   []string
+	MinPP    float32
+	MaxPP    float32
 	MinPrice int
 	MaxPrice int
 }
@@ -55,11 +54,11 @@ type OutputCars struct {
 
 type OutputCar struct {
 	Manufacturer string  `json:"manufacturer"`
-	ShortName 	 string  `json:"short_name"`
-	Group		 string  `json:"group"`
-	Price		 int 	 `json:"price"`
-	Shop		 string  `json:"shop"`
-	PP			 float32 `json:"pp"`
+	ShortName    string  `json:"short_name"`
+	Group        string  `json:"group"`
+	Price        int     `json:"price"`
+	Shop         string  `json:"shop"`
+	PP           float32 `json:"pp"`
 }
 
 type Manufacturer struct {
@@ -78,7 +77,7 @@ func (pp *PP) UnmarshalJSON(d []byte) error {
 func GetCarsWithFiltersHandler(c echo.Context) error {
 	log.Println("Received call to /cars")
 	cars, _ := GetCarsWithFilters(c.QueryParams())
-	
+
 	output, err := json.Marshal(cars)
 	if err != nil {
 		fmt.Println("Failed to marshal car output")
@@ -89,10 +88,11 @@ func GetCarsWithFiltersHandler(c echo.Context) error {
 	return c.String(http.StatusOK, string(output))
 }
 
-func GetCarsWithFilters(params url.Values) (OutputCars, error) {	
+func GetCarsWithFilters(params url.Values) (OutputCars, error) {
 	var minPP, maxPP float64
 	var minPrice, maxPrice int
 	var groups []string
+	var vgt = true
 	// Setup filter variables
 	if params.Get("minPP") == "" {
 		minPP = config.DEFAULT_MIN_PP
@@ -113,20 +113,23 @@ func GetCarsWithFilters(params url.Values) (OutputCars, error) {
 		minPrice = config.DEFAULT_MIN_PRICE
 	} else {
 		minPrice, _ = strconv.Atoi(params.Get("minPrice"))
-	}	
+	}
 	if params.Get("maxPrice") == "" {
 		maxPrice = config.DEFAULT_MAX_PRICE
 	} else {
 		maxPrice, _ = strconv.Atoi(params.Get("maxPrice"))
 	}
+	if params.Get("vgt") == "false" {
+		vgt = false
+	}
 	filters := CarRequestFilters{
-		Groups: groups,
-		MinPP: float32(minPP),
-		MaxPP: float32(maxPP),
+		Groups:   groups,
+		MinPP:    float32(minPP),
+		MaxPP:    float32(maxPP),
 		MinPrice: minPrice,
 		MaxPrice: maxPrice,
 	}
-	
+
 	// Get all of the cars from storage
 	filePath := "internal/storage/cars.json"
 	var Data APIData
@@ -146,6 +149,9 @@ func GetCarsWithFilters(params url.Values) (OutputCars, error) {
 	filteredCars := filterPP(Data.Cars, filters.MinPP, filters.MaxPP)
 	filteredCars = filterGroup(filteredCars, filters.Groups)
 	filteredCars = filterPrice(filteredCars, filters.MinPrice, filters.MaxPrice)
+	if !vgt {
+		filteredCars = filterVGT(filteredCars)
+	}
 	outputCars := prepareOutputCars(filteredCars)
 	return outputCars, nil
 }
@@ -191,7 +197,7 @@ func filterGroup(c Cars, groups []string) (out Cars) {
 	out = Cars{}
 	for _, car := range c.Cars {
 		for _, group := range groups {
-			if car.Group == group || (car.Group == "" && group == "open"){
+			if car.Group == group || (car.Group == "" && group == "open") {
 				out.Cars = append(out.Cars, car)
 			}
 		}
@@ -205,6 +211,17 @@ func filterPrice(c Cars, minPrice, maxPrice int) (out Cars) {
 		// Get the lowest price from all of the possible scores
 		lowestPrice, _ := getLowestPrice(car)
 		if lowestPrice >= minPrice && lowestPrice <= maxPrice {
+			out.Cars = append(out.Cars, car)
+		}
+	}
+	return out
+}
+
+func filterVGT(c Cars) (out Cars) {
+	out = Cars{}
+	fmt.Println("Filtering VGTs")
+	for _, car := range c.Cars {
+		if !strings.Contains(car.ShortName, "VGT") {
 			out.Cars = append(out.Cars, car)
 		}
 	}
@@ -237,11 +254,11 @@ func prepareOutputCars(cars Cars) (out OutputCars) {
 		lowestPrice, store := getLowestPrice(car)
 		outputCar := OutputCar{
 			Manufacturer: car.Manufacturer.Name,
-			ShortName: car.ShortName,
-			Group: car.Group,
-			Price: lowestPrice,
-			Shop: store,
-			PP: float32(car.PP),
+			ShortName:    car.ShortName,
+			Group:        car.Group,
+			Price:        lowestPrice,
+			Shop:         store,
+			PP:           float32(car.PP),
 		}
 		out.Cars = append(out.Cars, outputCar)
 	}
